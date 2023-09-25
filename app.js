@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 
 function getTime() {
-  const fallback = "2023-09-25T20:00"; // 1569369600000, // new Date(2019, 8, 24, 19)
+  const fallback = "2023-09-25T02:30:00.000+05:30"; // 1569369600000, // new Date(2019, 8, 24, 19)
   try {
     const d = Date.parse(params.has("d") ? params.get("d") : fallback);
     return isNaN(d) ? Date.parse(fallback) : d;
