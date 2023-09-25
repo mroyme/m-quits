@@ -10,8 +10,8 @@ function getTime() {
   }
 }
 
-const dailyCost = params.has("s") ? parseFloat(params.get("s")) : 6.375466667;
-const currency = params.has("c") ? params.get("c") : "$";
+const dailyCost = params.has("s") ? parseFloat(params.get("s")) : 54;
+const currency = params.has("c") ? params.get("c") : "₹";
 const time = getTime();
 const n = params.has("n") ? params.get("n") : "jake";
 if (n) {
