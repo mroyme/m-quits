@@ -13,7 +13,7 @@ function getTime() {
 const dailyCost = params.has("s") ? parseFloat(params.get("s")) : 54;
 const currency = params.has("c") ? params.get("c") : "₹";
 const time = getTime();
-const n = params.has("n") ? params.get("n") : "madhurjya";
+const n = params.has("n") ? params.get("n") : "m";
 if (n) {
   document.querySelectorAll(".name").forEach((s) => (s.innerText = n));
 }
